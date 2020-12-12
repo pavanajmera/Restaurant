@@ -1,0 +1,207 @@
+*{
+    margin: 0;;
+    padding: 0;
+    font-style: sans-serif;
+}
+
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),
+    url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Start Navbar*/
+.nav-bar{
+    display: flex;
+    padding: 10px 10px;
+}
+.nav-logo img{
+    width: 80px;
+}
+.nav-links{
+    flex: 1;
+}
+.nav-links ul{
+    margin-left: 50px;
+    display: inline;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 25px 30px;
+}
+.nav-links ul a{
+    color: rgba(247, 238, 238, 0.966);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:pink;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/* End Navbar*/
+/* Start Button */
+.btn{
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    /*margin: 5px;*/
+}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.nav-links .btn{
+    float: right;
+    margin: 20px 25px;
+}
+
+/* End Button */
+
+/* Start Title*/
+.title{
+    margin: 80px 130px;
+    color: black;
+    text-align: center;
+}
+.title h1{
+    font-size: 64px;
+    padding-top: 120px;
+    margin-bottom: 30px;
+    color: aqua;
+}
+.title a{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    background: yellow;
+}
+.title a::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #ff005e;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+    transform-origin: bottom;
+    transform: translateY(-100%) rotateX(90deg);
+}
+.title a:hover::before{
+    transform: translateY(0) rotate(0deg);
+}
+.title a::after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #ea004f;
+    border-radius: 20px;
+    color: #fff;
+    transition: 0.5s;
+    transform-origin: top;
+    transform: translateY(0) rotateX(90deg);
+}
+.title a:hover::after{
+    transform: translateY(0) rotate(0deg);
+}
+/* End Title*/
+
+/* About Section */
+.About{
+    height: 100vh;
+    background-image: url(AboutBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+}
+.About h1{
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+.About h4{
+    color: #fff;
+    font-size: 20px;
+}
+.Time{
+    text-align: center;
+    background-color: #fff;
+    box-shadow: rgba(0,0,0,0.1);
+    margin-left: 35%;
+    padding: 20px;
+    width: 30%;
+    grid-template-columns: 40% 60%;
+}
+
+.Time .heading h2{
+    color:rgb(233, 12, 12);
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;  
+}
+.Time h3{
+    letter-spacing: 2px;
+}
+/* End About Section */

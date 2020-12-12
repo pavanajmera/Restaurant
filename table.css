@@ -1,0 +1,98 @@
+*{
+    margin: 0;;
+    padding: 0;
+    font-style: sans-serif;
+}
+
+.neons{
+    height: 100vh;
+    background-image:linear-gradient(rgba(151, 118, 118, 0.3),rgba(235, 187, 187, 0.2)),
+    url(BackgroundTable.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.neons h1 {
+    font-size: 80px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+/*@-webkit-keyframes glow {
+    from {
+        color: rgb(208, 20, 233);
+        text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+    }
+    to{
+         color: rgba(216, 18, 61, 0.952);
+        text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+  }
+}*/
+
+/* Start Reservation Table*/
+.Hello h2{
+    padding: 30px;
+}
+input{
+    border-radius: 10px;
+    width: 250px;
+    height: 35px;
+    text-indent: 5px;
+    display: flex;
+}
+input:focus{
+    outline: none;
+}
+/*fieldset{
+    width: 50%;
+    height: 690px;
+    background-color: none;
+    border-radius: 5px;
+    outline: none;
+}*/
+table{
+    font-size: 22px;
+    width:70%; 
+    margin-left:25%; 
+    margin-right:35%;
+}
+td{
+    line-height: 50px;
+}
+
+.button {
+    margin: 20px;
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(241, 235, 235);
+    background-color: #e0620d;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(27, 15, 15);
+}
+
+.button:hover {
+    background-color: #e0620d;
+}
+
+.button:active {
+    background-color: #daa41277;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+/* End Reservation Table*/
